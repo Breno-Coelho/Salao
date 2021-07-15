@@ -266,7 +266,7 @@ const Form = {
     ) {
       throw new Error('Os campos não foram preenchidos')
     }
-    /*
+
     if (
       agendamento.getDate() < today.getDate() + 2 ||
       agendamento.getDay() == 6 ||
@@ -275,7 +275,7 @@ const Form = {
       throw new Error(
         'Agendamentos devem ser feitos com dois dias de antecêdencia, e não é possível realizar agendamentos para Sábado ou Domingo'
       )
-    }*/
+    }
   },
 
   formatValues(x) {
@@ -351,7 +351,6 @@ const App = {
     Agendamento.all.forEach(function (agendamento, index) {
       DOM.addAgendamento(agendamento, index)
     })
-    //Ou Agendamento.all.forEach(DOM.addAgendamento)
     DOM.updateBalance()
     Storage.set(Agendamento.all)
   },

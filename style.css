@@ -1,8 +1,8 @@
 /*********Configuração global***********/
 :root{
     --dark-blue: #363f5f;
-    --green: #6E4EDE;
-    --light-green: #58B5FA;
+    --purple: #6E4EDE;
+    --light-purple: #58B5FA;
     --red: #e92929;
 }  
 *{
@@ -46,11 +46,11 @@ h2{
 
 
 a {
-    color: var(--green);
+    color: var(--purple);
     text-decoration: none;
 }
 a:hover {
-    color: var(--light-green);
+    color: var(--light-purple);
 }
 new {
     display: inline-block;
@@ -61,13 +61,13 @@ button{
     height: 50px;
     border: none;
     color: white;
-    background: var(--green);
+    background: var(--purple);
     padding: 0;
     border-radius: .4rem;
     cursor: pointer;
 }
 button:hover{
-    background: var(--light-green);
+    background: var(--light-purple);
 }
 .button.cancel{
     color: var(--red);
@@ -100,7 +100,7 @@ a:hover{
 
 /*************Parte do Header**********/
 header{
-    background: var(--green);
+    background: var(--purple);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,12 +153,12 @@ header{
     margin-top: 1rem;
 }
 .card.total{
-    background: var(--light-green);
+    background: var(--light-purple);
     color: white;
 }
 
 /**********Parte da Tabela**********/
-#transaction{
+#agendamento{
     display: block;
     width: 100%;
     overflow-x: auto;
@@ -198,9 +198,7 @@ td.description{
 td.income{
     color: #12a454;
 }
-td.expense{
-    color: #e92929;
-}
+
 td img{
     padding: 0 10px;
 }
